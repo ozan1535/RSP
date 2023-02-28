@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Players {
+  position: relative;
+  font-size: 5rem;
+  color: rgb(38, 214, 138);
+  margin: 1rem;
+}
+
+.Players div:hover {
+  color: rgb(87, 135, 231);
+  transition: 0.5s;
+}
+.Players div {
+  cursor: pointer;
+}
+
+.Players .Players__Scissors {
+  transform: scaleX(-1);
+}
+
+.Players.robot:after {
+  position: absolute;
+  content: "TRINIDA";
+  font-size: 1rem;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.Information {
+  width: 20rem;
+  height: 12rem;
+  background-color: rgb(38, 214, 138);
+  border-radius: 5px;
+  padding: 1rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.Information .wins,
+.choices {
+  display: flex;
+  justify-content: space-between;
+}
+.choices div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Information .winner,
+.round {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  color: rgb(87, 135, 231);
+}
+
+.infoText {
+  display: flex;
+  justify-content: center;
+}
